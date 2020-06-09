@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment2"
+    android:background="@drawable/image2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <VideoView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:keepScreenOn="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/video"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user"
+            android:elevation="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile2"
+            android:layout_marginRight="10dp" />
+        <ImageView
+            android:id="@+id/unlike"
+            android:elevation="10dp"
+            android:layout_below="@+id/user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/like"
+            android:elevation="10dp"
+            android:layout_below="@+id/user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart_colored"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/not_subscribed"
+            android:elevation="10dp"
+            android:layout_below="@+id/unlike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/subscribe"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" />
+        <ImageView
+            android:id="@+id/subscribed"
+            android:elevation="10dp"
+            android:layout_below="@+id/unlike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/subscribe_colored"
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" />
+        <ImageView
+            android:id="@+id/share"
+            android:elevation="10dp"
+            android:layout_below="@+id/not_subscribed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/share"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
